@@ -1,6 +1,6 @@
-## The following two functions create a special object that stores a numeric matrix and cache's its inverse matrix. 
+## The following two functions create a special object that stores a numeric matrix and caches its inverse matrix. 
 
-## This function creates a special "matrix" object, , which is really a list containing a function to
+## This function creates a special "matrix" object, which is really a list containing a function to
 ## 1. set the value of the matrix
 ## 2. get the value of the matrix
 ## 3. set the value of the inverse matrix
@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## This function computes the inverse of the special "matrix" returned by makeCacheMatrix.
 ## If the inverse has already been calculated (and the matrix has not changed),
-## then the cachesolve should retrieve the inverse from the cache.
+## then the cacheSolve should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
